@@ -9,6 +9,12 @@ ul.navList {
     font-size: 1.8rem;
 }
 
+@media only screen and (max-width: 600px) {
+    ul.navList {
+        font-size: 1rem;
+    }
+  }
+
 .correct {
     animation: growCorrect 0.5s;
     animation-iteration-count: 1;

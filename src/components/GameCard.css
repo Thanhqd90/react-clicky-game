@@ -2,6 +2,13 @@
     font-size: 100px;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .svg-inline--fa {
+        font-size: 60px;
+    }
+  }
+
 .shake {
     animation: shake 0.15s; 
     animation-iteration-count: 2; 
