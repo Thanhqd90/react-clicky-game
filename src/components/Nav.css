@@ -1,7 +1,12 @@
+nav {
+    background-color: black;
+    color:white;
+}
+
 ul.navList {
     display: flex;
     justify-content: space-around;
-    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    font-size: 1.8rem;
 }
 
 .correct {

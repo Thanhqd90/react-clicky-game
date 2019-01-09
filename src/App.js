@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Row, CardPanel, Col } from 'react-materialize';
-import { faAnchor, faChess, faBabyCarriage, faBarcode, faAirFreshener, faBlenderPhone, faBell, faCarrot, faBroom, faMicrophone, faRainbow, faRunning } from '@fortawesome/free-solid-svg-icons'
+import { faBirthdayCake, faAnchor, faChess, faBabyCarriage, faBarcode, faAirFreshener, faBell, faCarrot, faBroom, faMicrophone, faRainbow, faRunning } from '@fortawesome/free-solid-svg-icons'
 import GameCard from './components/GameCard';
 import Nav from './components/Nav';
 
 class App extends Component {
     state = {
-        icons: [faAnchor, faChess, faBabyCarriage, faBarcode, faAirFreshener, faBlenderPhone, faBell, faCarrot, faBroom, faMicrophone, faRainbow, faRunning].sort(this.randomize),
+        icons: [faBirthdayCake, faAnchor, faChess, faBabyCarriage, faBarcode, faAirFreshener, faBell, faCarrot, faBroom, faMicrophone, faRainbow, faRunning].sort(this.randomize),
         clicked: [],
         score: 0,
         highScore: 0,
@@ -52,8 +52,8 @@ s
                             highScore={this.state.highScore} 
                         />
                     <Col s={12}>
-                        <CardPanel>
-                            <p>Click on an image to earn points, but don't click on the same one twice</p>
+                        <CardPanel className="center">
+                            <h5>Click on an image to earn points, but don't click on the same one twice</h5>
                         </CardPanel>
                     </Col>
                     </Row>
